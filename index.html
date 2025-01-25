@@ -29,9 +29,9 @@
               <fieldset>
                 <legend>Temperature</legend>
                 <label for="Temperature">Celsius</label> <br/>
- <input type="number" id="c"> <br/>
-                <button id="temperature"> Convert </button> <br/>
-                <input type="number" id="f"> <br/>
+ <input type="number" id="celcius"> <br/>
+                <button id="temperature" onclick='celtofahr()'> Convert </button> <br/>
+                <input type="number" id="fahrenheit"> <br/>
  <label for="Temperature">Fahrenheit</label>
               </fieldset>
               <aside>
@@ -51,10 +51,10 @@
               <fieldset>
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
- <input type="number"> <br/>
-                <button id="weight"> Convert </button>  <br/>
+ <input id="kgs" type="number"> <br/>
+                <button id="weight" onclick='kgtolbs()'> Convert </button>  <br/>
  
-                <input type="number">  <br/>
+                <input id="lbs" type="number">  <br/>
   <label for="Weight">Pounds</label>    
               </fieldset>
               <aside>
@@ -73,9 +73,9 @@
               <fieldset>
                 <legend>Distance</legend>
                   <label for="Distance">KM</label> <br/>
- <input type="number">  <br/>
-                  <button id="distance"> Convert </button> <br/>
-                  <input type="number">  <br/>
+ <input id="kms" type="number">  <br/>
+                  <button id="distance"  onclick='kmtomiles()'> Convert </button> <br/>
+                  <input id="miles" type="number">  <br/>
   <label for="Distance">Miles</label>
               </fieldset>
               <aside>
@@ -93,4 +93,5 @@
     </div>
     <footer>Learn more about HTML and CSS as a part of IBM Fullstack Cloud Developer Certification</footer>
   </body>
+  <script src="script.js"></script>
 </html>
